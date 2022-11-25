@@ -880,13 +880,13 @@ section {
 }
 
 .our-team {
-    padding: 35px 0 45px;
+    padding: 35px 0 35px;
     margin-bottom: 30px;
     background-color: #e7e5ee;
     text-align: center;
     overflow: hidden;
     position: relative;
-    border-radius: 20px
+    border-radius: 20px;
 }
 
 .our-team .picture {
@@ -960,7 +960,43 @@ section {
     transition: all 0.5s ease 0s
 }
 
+.our-team .social-about {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #002340;
+
+    color:#e2e2eb;
+    text-align: justify;
+
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    transition: all 0.5s ease 0s
+}
+
+.our-team .social-about .about-container {
+    margin: 15px;
+    font-style: italic;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 100px;
+
+    /* To hide the scrollbar in other browsers as well */
+    -ms-overflow-style: none; /* For IE, Edge */
+    scrollbar-width: 0; /* For Firefox */
+}
+
+/* Hiding scrollbar in Chrome */
+.our-team .social-about .about-container::-webkit-scrollbar {
+    display: none;
+}
+
 .our-team:hover .social {
+    bottom: 0
+}
+
+.our-team:hover .social-about {
     bottom: 0
 }
 
