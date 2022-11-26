@@ -25,22 +25,24 @@
             cursor: pointer;
             outline: inherit
         }
-
+        
         button {
             width: fit-content
         }
     </style>
 </head>
-<script>$(window).load(function () { $(".se-pre-con").fadeOut("slow");; });</script>
+<script>
+    $(window).load(function() {
+        $(".se-pre-con").fadeOut("slow");;
+    });
+</script>
 
 <body> <video src="images/backvideo.mp4" autoplay loop playsinline muted preload></video>
     <div class="container-fluid" id="home">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="padding-top: 0;padding-bottom: 0;">
-            <div class="d-flex w-50 order-0"> <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a
-                    class="navbar-brand" href="index.html"> <img src="images/logo (1).png" height="70px" alt=""
-                        style="border-radius: 25px;"> </a></div>
+            <div class="d-flex w-50 order-0"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <a class="navbar-brand" href="index.html"> <img src="images/logo (1).png" height="70px" alt="" style="border-radius: 25px;"> </a>
+            </div>
             <div class="collapse navbar-collapse justify-content-center order-2" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"> <a class="nav-link" href="index.html">Home</a></li>
@@ -49,8 +51,7 @@
                     <li class="nav-item active" id="scteam"> <a class="nav-link" href="#">Team</a></li>
                     <li class="nav-item "> <a class="nav-link" href="gallery.html">Gallery</a></li>
                 </ul>
-            </div> <span
-                class="navbar-text small mt-1 w-50 text-right order-1 order-md-last d-none d-sm-none d-md-none d-lg-block">
+            </div> <span class="navbar-text small mt-1 w-50 text-right order-1 order-md-last d-none d-sm-none d-md-none d-lg-block">
                 <a target="_blank" href="https://twitter.com/seds_vitap?s=09" class="responsivecard fa fa-twitter"
                     style="color: white;"></a> <a target="_blank" href="mailto:space.club@vitap.ac.in"
                     class="responsivecard fa fa-google" style="color: white;"></a><a target="_blank"
@@ -67,14 +68,25 @@
                 <h2 class="frame-1">Students for the Exploration and Development of Space</h2>
                 <h2 class="frame-2">VIT-AP</h2>
                 <h2 class="frame-3">Team</h2>
-                <h2 class="frame-4">2020-21 !!</h2>
-                <h2 class="frame-5"> <span>SEDS</span> <span>Team</span> <span>2020-21!!</span></h2>
+                <h2 class="frame-4">2022-23 !!</h2>
+                <h2 class="frame-5"> <span>SEDS</span> <span>Team</span> <span>2022-23!!</span></h2>
             </div>
         </div>
     </section>
-    <script>function core() { document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="coreteam.html" height="100%" width="100%" style="border:none"></iframe>'; } function project() { document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="projectteam.html" height="100%" width="100%" style="border:none"></iframe>'; } function outreach() { document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="outteam.html" height="100%" width="100%" style="border:none"></iframe>'; }</script>
-    <div class="container row" id="btncontainer"
-        style="margin: 0 auto;background-color: rgba(0, 0, 0, 0.685);min-width: 100%;padding-bottom: 15px;margin-bottom: 10px;">
+    <script>
+        function core() {
+            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="coreteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+
+        function project() {
+            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="projectteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+
+        function outreach() {
+            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="outteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+    </script>
+    <div class="container row" id="btncontainer" style="margin: 0 auto;background-color: rgba(0, 0, 0, 0.685);min-width: 100%;padding-bottom: 15px;margin-bottom: 10px;">
         <button class="col-4" onclick="return(core())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-right: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content">
@@ -104,11 +116,16 @@
         </button>
     </div>
     <div id="coreanchor"></div>
-    <script
-        type="text/javascript">function iframeLoaded() { var iFrameID = document.getElementById('idIframe'); if (iFrameID) { iFrameID.height = ""; iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px"; } }</script>
-    <div id="placeholder" style="z-index: 1;position: relative;min-height: 800px;"> <iframe id="idIframe"
-            onload="iframeLoaded()" src="outteam.html" scrolling="no" height="100%" width="100%"
-            style="border:none"></iframe></div>
+    <script type="text/javascript">
+        function iframeLoaded() {
+            var iFrameID = document.getElementById('idIframe');
+            if (iFrameID) {
+                iFrameID.height = "";
+                iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+            }
+        }
+    </script>
+    <div id="placeholder" style="z-index: 1;position: relative;min-height: 800px;"> <iframe id="idIframe" onload="iframeLoaded()" src="outteam.html" scrolling="no" height="100%" width="100%" style="border:none"></iframe></div>
     <div class="new_footer_top" style="background-color: white;">
         <footer style="display: block;">
             <div class="footer">
@@ -116,10 +133,8 @@
                     <p>CONNECT WITH US</p>
                 </div>
                 <div class="row_foot"> <a target="_blank" href="https://www.linkedin.com/company/seds-vit-ap"><i
-                            class="fa fa-linkedin-in"></i></a> <a target="_blank"
-                        href="https://instagram.com/seds_vitap?igshid=1h9vn3uz4wxla"><i class="fa fa-instagram"></i></a>
-                    <a target="_blank" href="mailto:space.club@vitap.ac.in"><i class="fa fa-envelope"></i></a><a
-                        target="_blank" href="https://twitter.com/seds_vitap?s=09"><i class="fa fa-twitter"></i></a>
+                            class="fa fa-linkedin-in"></i></a> <a target="_blank" href="https://instagram.com/seds_vitap?igshid=1h9vn3uz4wxla"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="mailto:space.club@vitap.ac.in"><i class="fa fa-envelope"></i></a><a target="_blank" href="https://twitter.com/seds_vitap?s=09"><i class="fa fa-twitter"></i></a>
                 </div>
                 <div class="row_foot_1">
                     <p>VIT-AP University, Inavolu, Beside AP Secretariat Amaravati, Andhra Pradesh 522237, India</p>
