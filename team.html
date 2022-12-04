@@ -99,6 +99,14 @@
         function outreach() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="outteam.html" height="100%" width="100%" style="border:none"></iframe>';
         }
+
+        function research() {
+            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="researchteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+        
+        function design() {
+            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="designteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
     </script>
     <style>
         @media(max-width:560px) {
@@ -147,14 +155,31 @@
         <button class="col-4 col-sm-4 col-md-4" onclick="return(technical())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
-                    <h2> Technical Team </h2>
+                    <h2>Technical Team</h2>
                 </div>
             </div>
         </button>
+        
         <button class="col-4 col-sm-4 col-md-4" onclick="return(marketing())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
                     <h2> Marketing Team </h2>
+                </div>
+            </div>
+        </button>
+        
+        <button class="col-4 col-sm-4 col-md-4" onclick="return(research())" style="padding-top: 0;">
+            <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
+                <div class="content" style="border-radius: 30px;">
+                    <h2> Research Team </h2>
+                </div>
+            </div>
+        </button>
+        
+        <button class="col-4 col-sm-4 col-md-4" onclick="return(design())" style="padding-top: 0;">
+            <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
+                <div class="content" style="border-radius: 30px;">
+                    <h2> Design Team </h2>
                 </div>
             </div>
         </button>
