@@ -76,13 +76,13 @@
         </div>
     </section>
     <script>
-        function core() {
-            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="coreteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        function executive() {
+            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="executiveboard.html" height="100%" width="100%" style="border:none"></iframe>';
         }
 
-        function project() {
-            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="projectteam.html" height="100%" width="100%" style="border:none"></iframe>';
-        }
+        // function project() {
+        //     document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="projectteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        // }
 
         function marketing() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="marketing.html" height="100%" width="100%" style="border:none"></iframe>';
@@ -96,9 +96,9 @@
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="technical.html" height="100%" width="100%" style="border:none"></iframe>';
         }
 
-        function outreach() {
-            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="outteam.html" height="100%" width="100%" style="border:none"></iframe>';
-        }
+        // function outreach() {
+        //     document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="outteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        // }
 
         function research() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="researchteam.html" height="100%" width="100%" style="border:none"></iframe>';
@@ -106,6 +106,10 @@
         
         function design() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="designteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        }
+        
+        function documentation() {
+            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="documentation.html" height="100%" width="100%" style="border:none"></iframe>';
         }
     </script>
     <style>
@@ -116,33 +120,31 @@
         }
     </style>
     <div class="container row" id="btncontainer" style="margin: 0 auto;background-color: rgba(0, 0, 0, 0.685);min-width: 100%;padding-bottom: 15px;margin-bottom: 10px;">
-        <button class="col-4 col-sm-4 col-md-4" onclick="return(core())" style="padding-top: 0;">
-            <div class="box" style="border-radius: 30px;margin-right: 15px;"> <span style="border-radius: 30px;"></span>
-                <div class="content">
-                    <h2> Core Team</h2>
+        <button class="col-4 col-sm-4 col-md-4" onclick="return(executive())" style="padding-top: 0;">
+            <div class="box" style="border-radius: 30px;margin-left:15px ;margin-right: 15px;"> <span
+                    style="border-radius: 30px;"></span>
+                <div class="content" style="border-radius: 30px;">
+                    <h2> Executive Board</h2>
                 </div>
             </div>
-        </button>
-        <style>
-            @media(min-width:560px) {
-                #btncontainer button {
-                    max-width: 420px
-                }
-            }
-        </style><button class="col-4 col-sm-4 col-md-4" onclick="return(project())" style="padding-top: 0;">
+        </button> 
+        
+        <!-- <button class="col-4 col-sm-4 col-md-4" onclick="return(project())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left:15px ;margin-right: 15px;"> <span
                     style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
                     <h2> Project team</h2>
                 </div>
             </div>
-        </button> <button class="col-4 col-sm-4 col-md-4" onclick="return(outreach())" style="padding-top: 0;">
+        </button> 
+        
+        <button class="col-4 col-sm-4 col-md-4" onclick="return(outreach())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
                     <h2> Outreach team</h2>
                 </div>
             </div>
-        </button>
+        </button> -->
 
         <button class="col-4 col-sm-4 col-md-4" onclick="return(eventsteam())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
@@ -180,6 +182,14 @@
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
                     <h2> Design Team </h2>
+                </div>
+            </div>
+        </button>
+        
+        <button class="col-4 col-sm-4 col-md-4" onclick="return(documentation())" style="padding-top: 0;">
+            <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
+                <div class="content" style="border-radius: 30px;">
+                    <h2> Documentation Team </h2>
                 </div>
             </div>
         </button>
