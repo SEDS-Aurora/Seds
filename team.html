@@ -26,14 +26,14 @@
             cursor: pointer;
             outline: inherit
         }
-        
+
         button {
             width: fit-content
         }
     </style>
 </head>
 <script>
-    $(window).load(function() {
+    $(window).load(function () {
         $(".se-pre-con").fadeOut("slow");;
     });
 </script>
@@ -42,9 +42,11 @@
     <div class="container-fluid" id="home">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="padding-top: 0;padding-bottom: 0;">
             <div class="d-flex w-50 order-0">
-                <a class="navbar-brand" href="index.html"> <img src="images/logo (1).png" height="70px" alt="" style="border-radius: 25px;"> </a>
-            </div> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-                    class="navbar-toggler-icon"></span> </button>
+                <a class="navbar-brand" href="index.html"> <img src="images/logo (1).png" height="70px" alt=""
+                        style="border-radius: 25px;"> </a>
+            </div> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse justify-content-center order-2" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"> <a class="nav-link" href="index.html">Home</a></li>
@@ -53,7 +55,8 @@
                     <li class="nav-item active" id="scteam"> <a class="nav-link" href="#">Team</a></li>
                     <li class="nav-item "> <a class="nav-link" href="gallery.html">Gallery</a></li>
                 </ul>
-            </div> <span class="navbar-text small mt-1 w-50 text-right order-1 order-md-last d-none d-sm-none d-md-none d-lg-block">
+            </div> <span
+                class="navbar-text small mt-1 w-50 text-right order-1 order-md-last d-none d-sm-none d-md-none d-lg-block">
                 <a target="_blank" href="https://twitter.com/seds_vitap?s=09" class="responsivecard fa fa-twitter"
                     style="color: white;"></a> <a target="_blank" href="mailto:space.club@vitap.ac.in"
                     class="responsivecard fa fa-google" style="color: white;"></a><a target="_blank"
@@ -103,11 +106,11 @@
         function research() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="researchteam.html" height="100%" width="100%" style="border:none"></iframe>';
         }
-        
+
         function design() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="designteam.html" height="100%" width="100%" style="border:none"></iframe>';
         }
-        
+
         function documentation() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="documentation.html" height="100%" width="100%" style="border:none"></iframe>';
         }
@@ -119,7 +122,8 @@
             }
         }
     </style>
-    <div class="container row" id="btncontainer" style="margin: 0 auto;background-color: rgba(0, 0, 0, 0.685);min-width: 100%;padding-bottom: 15px;margin-bottom: 10px;">
+    <div class="container row" id="btncontainer"
+        style="margin: 0 auto;background-color: rgba(0, 0, 0, 0.685);min-width: 100%;padding-bottom: 15px;margin-bottom: 10px;">
         <button class="col-4 col-sm-4 col-md-4" onclick="return(executive())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left:15px ;margin-right: 15px;"> <span
                     style="border-radius: 30px;"></span>
@@ -127,8 +131,8 @@
                     <h2> Executive Board</h2>
                 </div>
             </div>
-        </button> 
-        
+        </button>
+
         <!-- <button class="col-4 col-sm-4 col-md-4" onclick="return(project())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left:15px ;margin-right: 15px;"> <span
                     style="border-radius: 30px;"></span>
@@ -161,7 +165,7 @@
                 </div>
             </div>
         </button>
-        
+
         <button class="col-4 col-sm-4 col-md-4" onclick="return(marketing())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
@@ -169,7 +173,7 @@
                 </div>
             </div>
         </button>
-        
+
         <button class="col-4 col-sm-4 col-md-4" onclick="return(research())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
@@ -177,7 +181,7 @@
                 </div>
             </div>
         </button>
-        
+
         <button class="col-4 col-sm-4 col-md-4" onclick="return(design())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
@@ -185,7 +189,7 @@
                 </div>
             </div>
         </button>
-        
+
         <button class="col-4 col-sm-4 col-md-4" onclick="return(documentation())" style="padding-top: 0;">
             <div class="box" style="border-radius: 30px;margin-left: 15px;"> <span style="border-radius: 30px;"></span>
                 <div class="content" style="border-radius: 30px;">
@@ -206,7 +210,12 @@
             }
         }
     </script>
-    <div id="placeholder" style="z-index: 1;position: relative;min-height: 800px;"> <iframe id="idIframe" onload="iframeLoaded()" src="coreteam.html" scrolling="no" height="100%" width="100%" style="border:none"></iframe></div>
+    <div id="placeholder" style="z-index: 1;position: relative;min-height: 800px;"> 
+        <iframe id="idIframe"
+            onload="iframeLoaded()" src="executiveboard.html" scrolling="no" height="100%" width="100%"
+            style="border:none">
+        </iframe>
+    </div>
     <div class="new_footer_top" style="background-color: white;">
         <footer style="display: block;">
             <div class="footer">
@@ -214,8 +223,10 @@
                     <p>CONNECT WITH US</p>
                 </div>
                 <div class="row_foot"> <a target="_blank" href="https://www.linkedin.com/company/seds-vit-ap"><i
-                            class="fa fa-linkedin"></i></a> <a target="_blank" href="https://instagram.com/seds_vitap?igshid=1h9vn3uz4wxla"><i class="fa fa-instagram"></i></a>
-                    <a target="_blank" href="mailto:space.club@vitap.ac.in"><i class="fa fa-envelope"></i></a><a target="_blank" href="https://twitter.com/seds_vitap?s=09"><i class="fa fa-twitter"></i></a>
+                            class="fa fa-linkedin"></i></a> <a target="_blank"
+                        href="https://instagram.com/seds_vitap?igshid=1h9vn3uz4wxla"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="mailto:space.club@vitap.ac.in"><i class="fa fa-envelope"></i></a><a
+                        target="_blank" href="https://twitter.com/seds_vitap?s=09"><i class="fa fa-twitter"></i></a>
                 </div>
                 <div class="row_foot_1">
                     <p>VIT-AP University, Inavolu, Beside AP Secretariat Amaravati, Andhra Pradesh 522237, India</p>
