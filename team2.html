@@ -74,9 +74,9 @@
         </div>
     </section>
     <script>
-        function core() {
-            document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="coreteam.html" height="100%" width="100%" style="border:none"></iframe>';
-        }
+        // function core() {
+        //     document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="coreteam.html" height="100%" width="100%" style="border:none"></iframe>';
+        // }
 
         function project() {
             document.getElementById("placeholder").innerHTML = '<iframe id="idIframe" onload="iframeLoaded()" scrolling="no" src="projectteam.html" height="100%" width="100%" style="border:none"></iframe>';
@@ -87,13 +87,15 @@
         }
     </script>
     <div class="container row" id="btncontainer" style="margin: 0 auto;background-color: rgba(0, 0, 0, 0.685);min-width: 100%;padding-bottom: 15px;margin-bottom: 10px;">
-        <button class="col-4" onclick="return(core())" style="padding-top: 0;">
-            <div class="box" style="border-radius: 30px;margin-right: 15px;"> <span style="border-radius: 30px;"></span>
-                <div class="content">
-                    <h2> Core Team</h2>
+        <a href="team.html">
+            <button class="col-4" onclick="" style="padding-top: 0;">
+                <div class="box" style="border-radius: 30px;margin-right: 15px;"> <span style="border-radius: 30px;"></span>
+                    <div class="content">
+                        <h2> Core Team</h2>
+                    </div>
                 </div>
-            </div>
-        </button>
+            </button>
+        </a>
         <style>
             @media(min-width:560px) {
                 #btncontainer button {
