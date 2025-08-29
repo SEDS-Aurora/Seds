@@ -1,0 +1,26 @@
+{
+  "name": "sedsaurora",
+  "version": "1.0.0",
+  "main": "jquery-1.11.3.min.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArpitMakkar12/SedsAurora.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArpitMakkar12/SedsAurora/issues"
+  },
+  "homepage": "https://github.com/ArpitMakkar12/SedsAurora#readme",
+  "description": "",
+  "dependencies": {
+    "vite": "^7.1.3"
+  }
+}
