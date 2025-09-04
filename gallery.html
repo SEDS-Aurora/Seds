@@ -274,6 +274,22 @@
 				</div>
 			</div>
 		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 example-2 card">
+				<div class="wrapper wrapper13">
+					<div class="header">
+						<div class="date"> <span class="day">19</span>  <span class="month">AUG</span>  <span class="year">2024</span>
+						</div>
+					</div>
+					<div class="data">
+						<div class="content"> <span class="author">SEDS VIT-AP</span>
+							<h1 class="title"><a href="#">NATIONAL SPACE DAY</a></h1>
+							<p class="text">Our club hosted three stalls on space research, an ML-powered agricultural hexacopter, and safe solar observation with a telescope.</p> <a href="#" class="button" data-toggle="modal" data-target=".Card_13_modal">View more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<div class="Card_1_modal modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg ">
@@ -1262,6 +1278,72 @@
 			</div>
 		</div>
 	</div>
+	<div class="Card_13_modal modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg ">
+        <div class="modal-content">
+            
+            <div class="container">
+                <div id="corner_cross" class="Cross_Container ">
+                    <div class="circCont">
+                        <button class="circle close" data-animation="xMarks" data-remove="3000" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides mySlides13">
+                <div class="numbertext">1 / 2</div>
+                <img loading="lazy" src="imgs/cards/card13_nationalspaceday/card13_pic1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides mySlides13">
+                <div class="numbertext">2 / 2</div>
+                <img loading="lazy" src="imgs/cards/card13_nationalspaceday/card13_pic2.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides13(-1)">❮</a>
+            <a class="next" onclick="plusSlides13(1)">❯</a>
+            
+            <div class="caption-container">
+                <p id="caption13"></p> </div>
+
+            <div class="row row_cor">
+                <div class="column">
+                    <img loading="lazy" class="demo cursor" src="imgs/cards/card13_nationalspaceday/card13_pic1.png" style="width:100%" onclick="currentSlide13(1)">
+                </div>
+                <div class="column">
+                    <img loading="lazy" class="demo cursor" src="imgs/cards/card13_nationalspaceday/card13_pic2.png" style="width:100%" onclick="currentSlide13(2)">
+                </div>
+            </div>
+
+            <div id="Modal_description">
+                <table class="modal_table">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;13</td>
+                            <td>&nbsp;Event Title</td>
+                            <td>&nbsp;NATIONAL SPACE DAY</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;2</td>
+                            <td>&nbsp;About</td>
+                            <td>&nbsp;Our club set up three stalls: one showcased research on topics like black holes, Mars, and exoplanets; another displayed an agricultural hexacopter using machine learning to monitor crop health; and the third offered safe solar observation using a filtered Celestron telescope. Surya Vamsi from VIT-AP won first place in a space and hydrology quiz. Certificates for presenters are pending, and the university provided two buses for the event.</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;3</td>
+                            <td>&nbsp;Speaker</td>
+                            <td>&nbsp;-</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;4</td>
+                            <td>&nbsp;Organized by</td>
+                            <td>&nbsp;SEDS VIT-AP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>										
 	<div class="new_footer_top" style="background-color: white;">
 		<footer style="display: block;">
 			<div class="footer">
@@ -1306,11 +1388,14 @@
 	<script>
 		var slideIndex12=1;showSlides12(slideIndex12);function plusSlides12(n){showSlides12(slideIndex12+=n);}function currentSlide12(n){showSlides12(slideIndex12=n);}function showSlides12(n){var i;var slides=document.getElementsByClassName("mySlides12");var dots=document.getElementsByClassName("demo");var captionText=document.getElementById("caption");if(n>slides.length){slideIndex12=1}if(n<1){slideIndex12=slides.length}for(i=0;i<slides.length;i++){slides[i].style.display="none";}for(i=0;i<dots.length;i++){dots[i].className=dots[i].className.replace(" active","");}slides[slideIndex12-1].style.display="block";dots[slideIndex12-1].className+=" active";captionText.innerHTML=dots[slideIndex12-1].alt;}
 	</script>
-	
+	<script>
+		var slideIndex13=1;showSlides13(slideIndex13);function plusSlides13(n){showSlides13(slideIndex13+=n);}function currentSlide13(n){showSlides13(slideIndex13=n);}function showSlides13(n){var i;var slides=document.getElementsByClassName("mySlides13");var dots=document.querySelectorAll(".Card_13_modal .demo");var captionText=document.getElementById("caption13");if(n>slides.length){slideIndex13=1}if(n<1){slideIndex13=slides.length}for(i=0;i<slides.length;i++){slides[i].style.display="none";}for(i=0;i<dots.length;i++){dots[i].className=dots[i].className.replace(" active","");}slides[slideIndex13-1].style.display="block";dots[slideIndex13-1].className+=" active";}
+	</script>
 	<script>
 		$('.circle').on('click',function(){var animClass=$(this).data('animation');var removeTime=$(this).data('remove');if($(this).hasClass(animClass)){$(this).removeClass(animClass);}else{$(this).addClass(animClass);if(typeof removeTime!='undefined'){var el=$(this);setTimeout(function(){el.removeClass(animClass);},removeTime);}}});
 	</script>
 </body>
 <div class="se-pre-con"></div>
+
 
 </html>
